@@ -1,0 +1,36 @@
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}code{font-family:source-code-pro,Menlo,Monaco,Consolas,courier new,monospace}
+        .styles_shimmer__2mxs4 {
+        	border-radius: 10px;
+        	background: #0d0d19;
+        	background-image: linear-gradient(to right, #0d0d19 8%, #000000 18%, #0d0d19 33%);
+        	background-repeat: no-repeat;
+        	background-position: 0 0;
+        	background-size: 1000 100;
+        	animation-duration: 1.6s;
+        	animation-fill-mode: forwards;
+        	animation-iteration-count: infinite;
+        	animation-name: styles_shimmering__2osrK;
+        	animation-timing-function: ease-in-out;
+        	display: inline-block;
+        }
+        
+        .styles_shimmerdiv__1prqm {
+        	display: inline-block;
+        }
+        
+        @keyframes styles_shimmering__2osrK {
+        	0% {
+        		background-position: top right;
+        	}
+        
+        	100% {
+        		background-position: top left;
+        	}
+        }
+
+
+
+
+
+
+
