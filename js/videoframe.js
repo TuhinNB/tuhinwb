@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const source = 'https://sportsdekho.ga';
+  const source = 'https://sportsdekho.ga/server/server1.php';
   const video = document.querySelector('video');
 
   // For more options see: https://github.com/sampotts/plyr/#options
