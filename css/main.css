@@ -12,3 +12,195 @@ body{background-color:#fff;margin: 0px;}
 .fl a div div{vertical-align:middle;display:table-cell}
 
 .fileName img{padding-right:3px}#container{width:600px;margin:0 auto;padding:20px}
+
+
+
+
+.telegram-svg {
+    margin: 0 auto;
+    display: inline-block;
+}
+.telegram-svg svg {
+    width: 17px !important;
+    margin-top: 2px !important;
+    margin-right: 5px !important;
+}
+
+/* Mixins */
+/* bg shortcodes */
+.bg-gradient1 span,
+.bg-gradient1:before {
+  background: #fa7e29;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fa7e29), color-stop(80%, #f6682f), to(#f6682f));
+  background: linear-gradient(180deg, #fa7e29 0%, #f6682f 80%, #f6682f 100%);
+}
+
+/* General */
+
+/* fancy Button */
+.fancy-button {
+    display: inline-block;
+    font-family: "Heebo", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.07em;
+    line-height: 11px;
+    color: #ffffff;
+    position: relative;
+    margin: 8px;
+    float: left;
+}
+.fancy-button.bg-gradient1 {
+  text-shadow: 0px 0px 1px #bf4c28;
+}
+.fancy-button.bg-gradient2 {
+  text-shadow: 0px 0px 1px #227270;
+}
+.fancy-button.bg-gradient3 {
+  text-shadow: 0 0 1px #546082;
+}
+.fancy-button:before {
+  content: "";
+  display: inline-block;
+  height: 40px;
+  position: absolute;
+  bottom: -1px;
+  left: 10px;
+  right: 10px;
+  z-index: -1;
+  border-radius: 2em;
+  -webkit-filter: blur(14px) brightness(0.9);
+          filter: blur(14px) brightness(0.9);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.fancy-button i {
+  margin-top: -2px;
+  font-size: 1.265em;
+  vertical-align: middle;
+}
+.fancy-button span {
+    display: inline-block;
+    padding: 14px 17px;
+    border-radius: 50em;
+    position: relative;
+    z-index: 2;
+    will-change: transform, filter;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.fancy-button:focus {
+  color: #ffffff;
+}
+.fancy-button:hover {
+  color: #ffffff;
+}
+.fancy-button:hover span {
+  -webkit-filter: brightness(0.9) contrast(1.2);
+          filter: brightness(0.9) contrast(1.2);
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+.fancy-button:hover:before {
+  bottom: 3px;
+  -webkit-filter: blur(6px) brightness(0.8);
+          filter: blur(6px) brightness(0.8);
+}
+.fancy-button:active span {
+  -webkit-filter: brightness(0.75) contrast(1.7);
+          filter: brightness(0.75) contrast(1.7);
+}
+.responsive-embed-container {
+ position:relative;
+ overflow:hidden;
+ padding-bottom:56.25%;
+ height:0;
+ max-width: 100% !important;
+}
+.responsive-embed-container iframe, .responsive-embed-container object, .responsive-embed-container embed {
+ position:absolute;
+ left:0;
+ top:0;
+ height:86%;
+ width:100%;
+}
+body {
+    background: #131424 !important;
+}
+html {
+    font-size: 17px;
+    font-weight: 500;
+    background: #fff;
+    color: #0087fc !important;
+}	
+.sidebar_tab_btns.sidebar_tab_btns_half li {
+    width: 100%;
+}	
+.info_tab_box {
+    background: #070818;
+}
+	@media (min-width: 1200px) {
+.responsive-embed-container {
+    position: relative;
+    overflow: visible;
+    padding-bottom: 52%;
+    height: 0;
+    max-width: 100% !important;
+    margin-bottom: -70px;
+	}
+.notification {
+	margin-top: -45px !IMPORTANT;
+		}
+.pad_right {
+    padding-right: 22em;
+}
+.live_sec {
+    padding-top: 0px;
+}		
+}
+	}
+	@media (min-width: 992px) {
+.responsive-embed-container {
+    position: relative;
+    overflow: visible;
+    padding-bottom: 51%;
+    height: 0;
+    max-width: 100% !important;
+    margin-bottom: -70px;
+	}
+.notification{
+	margin-top: -45px !IMPORTANT;
+		}
+.pad_right {
+    padding-right: 22em;
+}		
+}
+.video-js .vjs-picture-in-picture-control {
+    cursor: pointer;
+    flex: none;
+    display: none;
+}
+.notification {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	font-style: italic;
+	font-variant: small-caps;
+	margin-bottom: 5px !important;
+}	
+.right_hdr a {
+    font-size: 15px;
+}
+@media (min-width: 1200px){
+.uk-grid>* {
+    padding-left: 0px;
+}
+	}
+ins {
+    background: transparent;
+
+}
