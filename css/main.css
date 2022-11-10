@@ -232,3 +232,24 @@ ins {
 	max-width:170px;
 	min-width:70px}
 
+/* More Button */
+
+.dlbtn{text-align:center;
+	font-size:0.8em; }
+.dlbtn a{text-align:center;
+	padding:9px
+		;border-radius:5px;
+	margin:10px;
+	display:inline-block;
+	font-weight:700;
+	color:#fff;width:70%;
+	max-width:300px;
+	text-decoration:none;}
+
+.dlbtn a:hover{opacity:0.9;
+	color:#fff }
+
+
+
+
+
