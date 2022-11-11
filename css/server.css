@@ -1,8 +1,6 @@
-:root{--plyr-video-control-background-hover:rgba(156,136,255,.9);
-  --plyr-color-main:#9c88ff}
-body{box-sizing:border-box;
-  background:#000;
+*{background:#000;
   font-family:sans-serif;
+  padding:0;
   margin:0}
 
   .albaplayer_server-body{box-sizing:border-box;
