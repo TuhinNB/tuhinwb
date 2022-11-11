@@ -23,7 +23,22 @@
 <br><br>
 
 <div class="albaplayer_server-body">
-<div class='video-con embed-responsive'><meta content='no-referrer' name='referrer' /><script src='//cdn.jsdelivr.net/npm/cdnbye@latest'></script><video autoplay='auto' class='videofm' controls='' height='100vh' id='video' preload='metadata' referrerpolicy='strict-origin' width='100%'></video><script>var video = document.getElementById('video'); var source = 'https://siloh.pluto.tv/lilo/production/BEIN/ES/master_1.m3u8'; if(Hls.isSupported()) {var hls = new Hls({p2pConfig: {live: true,}}); hls.loadSource(source); hls.attachMedia(video);}</script>
+<div class='video-con embed-responsive'><meta content='no-referrer' name='referrer' /><script src='//cdn.jsdelivr.net/npm/cdnbye@latest'></script><video autoplay='auto' class='videofm' controls='' height='100%' id='video' preload='metadata' referrerpolicy='strict-origin' width='100%'></video>
+    
+  <script type="099673ed2e25593abf450282-text/javascript">
+var playerElement = document.getElementById("player-wrapper");
+var player = new Clappr.Player({
+source: 'https://siloh.pluto.tv/lilo/production/BEIN/ES/master_1.m3u8',
+mimeType: 'application/vnd.apple.mpegurl',
+mute: true,
+autoPlay: true,
+height: '100vh',
+width: '100%',
+});
+player.attachTo(playerElement);
+player.play();
+play();
+</script>
 </div> 
 
 
