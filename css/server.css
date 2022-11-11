@@ -97,12 +97,15 @@ iframe.cf{position:absolute;height:100%}
 .cf.videoif{z-index:99}
 iframe.videoif{height:100%;
   position:absolute}video.post-video{position:absolute;
-    height:100%}.albaplayer_server-body{box-sizing:border-box;
+    height:100%}
+
+.albaplayer_server-body{box-sizing:border-box;
       position:relative;
       width:100%;
       background:#000;
-      height:calc(100vh - 60px);
+      height:100%;
       overflow:hidden}
+
 .albaplayer_name{display:flex;
   clear:both;
   position:relative;
