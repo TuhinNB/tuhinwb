@@ -103,7 +103,7 @@ iframe.videoif{height:100%;
       position:relative;
       width:100%;
       background:#000;
-      height:100%;
+      height:calc(100vh - 60px);
       overflow:hidden}
 
 .albaplayer_name{display:flex;
