@@ -303,7 +303,149 @@ Live 🔴 : FIFA WORLD CUP <br>
 
  	
 	
+	
 	   <!-- Viewer Counter -->    
+	
+	
+	
+	<!-- Reset Cookies -->
+  
+<!--
+
+<input type="button" onclick="DeleteCookie('count')" value="Reset Cookies"/>
+
+-->
+
+<!-- ============= -->
+
+
+<!-- Visitor counter - Main code -->
+<script LANGUAGE="JavaScript">
+
+function GetCookie (name) 
+{  
+var arg = name + "=";  
+var alen = arg.length;  
+var clen = document.cookie.length;  
+var i = 0;  
+while (i < clen) {
+var j = i + alen;    
+if (document.cookie.substring(i, j) == arg)      
+return getCookieVal (j);    
+i = document.cookie.indexOf(" ", i) + 1;    
+if (i == 0) break;   
+}  
+return null;
+}
+
+function SetCookie (name, value) 
+{  
+var argv = SetCookie.arguments;  
+var argc = SetCookie.arguments.length;  
+var expires = (argc > 2) ? argv[2] : null;  
+var path = (argc > 3) ? argv[3] : null;  
+var domain = (argc > 4) ? argv[4] : null;  
+var secure = (argc > 5) ? argv[5] : false;  
+document.cookie = name + "=" + escape (value) + 
+((expires == null) ? "" : ("; expires=" + expires.toGMTString())) + 
+((path == null) ? "" : ("; path=" + path)) +  
+((domain == null) ? "" : ("; domain=" + domain)) +    
+((secure == true) ? "; secure" : "");
+}
+
+function DeleteCookie (name) 
+{  
+var exp = new Date();  
+exp.setTime (exp.getTime() - 1);   
+var cval = GetCookie (name);  
+document.cookie = name + "=" + cval + "; expires=" + exp.toGMTString();
+}
+
+var expDays = 30;
+var exp = new Date(); 
+exp.setTime(exp.getTime() + (expDays*24*60*60*1000));
+
+function UserCounterFunction()
+{
+var count = GetCookie('count')
+if(count == null) {
+
+SetCookie('count','1')
+return 1
+
+}
+
+else 
+{
+var newcount = parseInt(count) + 1;
+DeleteCookie('count')
+SetCookie('count',newcount,exp)
+return count
+}
+
+}
+
+function getCookieVal(offset) 
+{
+var endstr = document.cookie.indexOf (";", offset);
+if (endstr == -1)
+endstr = document.cookie.length;
+return unescape(document.cookie.substring(offset, endstr));
+}
+
+</script>
+<!-- ============= --> 
+  
+  
+  
+  
+<!-- set TEXT & call to "Visitor counter" (content)  -->
+<script LANGUAGE="JavaScript">
+var FlyAnimationVAR = " <p style = 'position:absolute; padding-bottom:0px; padding-left:75px; color:#007cc9; animation:FlyAnimation 2s infinite ease-in-out; ' >  ";
+var CssStyleInsideJavaVAR = " <p style = 'position:absolute; padding-top:3px; font-size:13px; color:#424242; text-shadow:0 1px #737373; font-family:Helvetica; ' >";
+document.write(CssStyleInsideJavaVAR + "Total Online: " + "<b>" + FlyAnimationVAR + UserCounterFunction() )
+</script>
+<!-- ======  -->
+ 
+  
+  
+<style>
+  
+/* FlyAnimation - keyframes */
+@keyframes FlyAnimation {
+ 0%,
+ 50% {
+  transform:translateY(0);
+  animation-timing-function:cubic-bezier(.2,.25,.55,1)
+ }
+ 25% {
+  transform:translateY(-1px);
+  animation-timing-function:cubic-bezier(.45,0,.8,.75)
+ }
+ 75% {
+  transform:translateY(1px);
+  animation-timing-function:cubic-bezier(.45,0,.8,.75)
+ }
+ to {
+  transform:translateY(0)
+ }
+}
+/* ============ */
+  
+</style>
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
 	
  <a href='https://drweiglundpartner.de/'></a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=bfd9a8204586a52f49191b120a6d61b20e8c52b5'></script>
 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/980579/t/5"></script>
