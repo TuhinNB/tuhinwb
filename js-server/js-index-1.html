@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -15,7 +17,7 @@
 
   <title>CodePen - JW Support Template</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="http://content.jwplatform.com/libraries/oH2wJDod.js"></script>
+<script src="//content.jwplatform.com/libraries/oH2wJDod.js"></script>
   
   
   
@@ -45,13 +47,16 @@ var playerInstance = jwplayer("myElement");
 playerInstance.setup({
   playlist: [{
     sources: [{
-      file: "https://linear-347.frequency.stream/dist/vix/347/hls/master/playlist.m3u8?",
+      file: "//content.jwplatform.com/manifests/HQzagMgW.m3u8",
       type: "hls" }],
 
     image: "//content.jwplatform.com/thumbs/HQzagMgW-720.jpg",
     title: "JW Player Support Demo",
     description: "An example video embed." }],
-  mute: false });
+
+  width: 640,
+  height: 360,
+  mute: true });
 //# sourceURL=pen.js
     </script>
 
