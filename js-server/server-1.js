@@ -9,8 +9,8 @@ playerInstance.setup({
     title: "JW Player Support Demo",
     description: "An example video embed."
   }],
-  width: 640,
-  height: 360,
+  width: auto,
+  height: auto,
   mute: false
   
 });
