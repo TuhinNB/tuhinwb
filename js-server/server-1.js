@@ -1,16 +1,15 @@
+   <script id="rendered-js" >
 var playerInstance = jwplayer("myElement");
 playerInstance.setup({
   playlist: [{
     sources: [{
       file: "https://live.hungama.com/linear/adipoli/playlist.m3u8",
-      type: "hls"
-    }],
+      type: "hls" }],
+
     image: "//content.jwplatform.com/thumbs/HQzagMgW-720.jpg",
     title: "JW Player Support Demo",
-    description: "An example video embed."
-  }],
-  width: 100%,
-  height: 100%,
-  mute: false
-  
-});
+    description: "An example video embed." }],
+
+  mute: false });
+//# sourceURL=pen.js
+    </script>
