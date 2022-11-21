@@ -1,4 +1,4 @@
-   <script id="rendered-js" >
+   
 var playerInstance = jwplayer("myElement");
 playerInstance.setup({
   playlist: [{
@@ -12,4 +12,4 @@ playerInstance.setup({
 
   mute: false });
 //# sourceURL=pen.js
-    </script>
+  
