@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+ <meta charset="UTF-8">
+
+<!-- Custom Icon Links  -->
+	
+<link rel="apple-touch-icon" type="image/png" href="https://raw.githubusercontent.com/TuhinNB/sports/master/image/television.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/TuhinNB/sports/master/image/television.png" sizes="32x32" />
+<link rel="mask-icon" type="image/x-icon" href="https://raw.githubusercontent.com/TuhinNB/sports/master/image/television.png" sizes="192x192" />
+
+
+
+
+  <title> JS 2 </title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://sportsdekho.ga/js/jwplayer.js"></script>
+  
+  <script>window.console = window.console || function(t) {};</script>
+  <script> if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }</script>
+  
+</head>
+  
+<body translate="no" >
+  <div id="myElement"></div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+  
+      <script id="rendered-js" >
+var playerInstance = jwplayer("myElement");
+playerInstance.setup({
+  playlist: [{
+    sources: [{
+      file: "https://linear-347.frequency.stream/dist/vix/347/hls/master/playlist.m3u8",
+      type: "hls" }],
+
+    image: "//sportsdekho.ga/image/FIFA_WORLD_CUP_2022.jpg",
+    title: "Sports Dekho! Free Live Sports TV Channel",
+    description: "" }],
+
+  mute: false });
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+</html>
+ 
