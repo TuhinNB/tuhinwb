@@ -263,5 +263,8 @@ ins {
 .news{
 color: aliceblue;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.news_color{
+  color: rgb(228, 22, 22);
 
 }
