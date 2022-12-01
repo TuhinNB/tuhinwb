@@ -10,6 +10,7 @@
 
      <link rel="stylesheet" id="clappr-style-css" href="/soccer/plugins/embed-clappr/clappr.css?ver=1.7.7" type="text/css" media="">
      <script src="//cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
      <script src="//cdn.jsdelivr.net/npm/cdnbye@latest/dist/hlsjs-p2p-engine.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/cdnbye@latest/dist/clappr-plugin.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr-responsive-container-plugin@1.0.0/dist/clappr-responsive-container-plugin.min.js"></script>
@@ -20,34 +21,9 @@
 
 </head>
 <body>
-
-
- <div id="player"></div>
-
- <script>
-   
-     var playerElement = document.getElementById("player-wrapper");
-
-var player = new Clappr.Player({
-  source: 'http://103.127.93.82:8234/gtv_640/tracks-v1a1/mono.m3u8?token=ZrXwqGqN8lN-l0',
-  poster: 'http://clappr.io/poster.png',
-  mute: true,
-  height: 360,
-  width: 640
-});
-
-player.attachTo(playerElement);
-
-     
-     
-     
-     
-     
-     
-     
-   
-</script>
-
-<!-- Histats.com  END  -->
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({source: "http://ctgtv.online:8234/t_tv/tracks-v1a1/mono.m3u8?token=ZrXwqGqN8lN-l0", parentId: "#player"});
+  </script>
 </body>
 </html>
