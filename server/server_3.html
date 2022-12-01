@@ -1,79 +1,61 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0 , user-scalable=no">
-    <meta name="viewport" content="width=device-width" />
-    <meta charset="UTF-8">        
-    <meta http-equiv="refresh" content="2000; url=">     
-    <!-- SEO-->
-    <meta name="author" content="Live4wap" />
-    <meta name="designer" content="Live4wap" />
-    <meta name="description" content="Watch Asia Cup 2022 . No signup required">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
-    <script src="https://kit.fontawesome.com/bf2610f0a2.js" crossorigin="anonymous"></script>
-    <!-- Halfmoon CSS -->
-    <link href="https://cdn.jsdelivr.net/gh/halfmoonui/halfmoon@1.0.4/css/halfmoon.min.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 
-    <!-- JAvaScript  -->
-       
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
-    <script>      document.addEventListener('DOMContentLoaded', () => {          const player = Plyr.setup('.js-player');      });  </script>
-    <script>      document.addEventListener('DOMContentLoaded', () => {          const player = Plyr.setup('.js-player');      });  </script>
-    <script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'G-H5DKLJLN0W');</script>
-    <script>
-      document.addEventListener("DOMContentLoaded",()=> {
-        const e = document.querySelector("video"),
-          n = e.getElementsByTagName("source")[0].src,
-          o = {};
-        if(Hls.isSupported()) {
-          var config = {
-            maxMaxBufferLength: 100,
-          };
-          const t = new Hls(config);
-          t.loadSource(n), t.on(Hls.Events.MANIFEST_PARSED, function(n, l) {
-            const s = t.levels.map(e => e.height);
-            o.quality = {
-              default: s[0],
-              options: s,
-              forced: !0,
-              onChange: e => (function(e) {
-                window.hls.levels.forEach((n, o) => {
-                  n.height === e && (window.hls.currentLevel = o)
-                })
-              })(e)
-            };
-            new Plyr(e, o)
-          }), t.attachMedia(e), window.hls = t
-        } else {
-          new Plyr(e, o)
+     <!-- Link  -->
+
+     <link rel="stylesheet" id="clappr-style-css" href="/soccer/plugins/embed-clappr/clappr.css?ver=1.7.7" type="text/css" media="">
+     <script src="//cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+     <script src="//cdn.jsdelivr.net/npm/cdnbye@latest/dist/hlsjs-p2p-engine.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/cdnbye@latest/dist/clappr-plugin.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr-responsive-container-plugin@1.0.0/dist/clappr-responsive-container-plugin.min.js"></script>
+    <script type="text/javascript"src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+
+    <Title>JC 2</Title>
+
+
+</head>
+<body>
+
+
+ <div id="player"></div>
+
+ <script>var player = new Clappr.Player(
+    {
+        source: "http://ctgtv.online:8234/t_tv/tracks-v1a1/mono.m3u8?token=ZrXwqGqN8lN-l0",
+        poster: 'https://raw.githubusercontent.com/TuhinNB/tuhinwb/master/image/FIFA.jpg',
+        parentId: "#player",
+        autoPlay: true,
+        plugins: [CDNByeClapprPlugin, ResponsiveContainer, LevelSelector],
+        levelSelectorConfig: {
+            title: 'Quality',
+            labels: {
+                2: 'High', // 500kbps
+                1: 'Med', // 240kbps
+                0: 'Low', // 120kbps
+            },
+            labelCallback: function(playbackLevel, customLabel) {
+                return customLabel + playbackLevel.level.height+'p'; // High 720p
+            }
+        },
+        playback: {
+            hlsjsConfig: {
+                // Other hlsjsConfig options provided by hls.js
+                p2pConfig: {
+                    logLevel: 'debug',
+                    live: true,        // set to true in live mode
+                    // Other p2pConfig options provided by CDNBye
+                }
+            }
         }
-      });
-      </script>
+    });
+   
+</script>
 
-
-
-    <!-- Title  -->
-
-    <title>Server 3</title>
-    </head>
-
-
-   <!-- Video Frame  -->
-
-
-<body class="dark-mode with-custom-scrollbars with-custom-css-scrollbars">
-<video id="player" autoplay='auto' controls preload="metadata" poster="https://sportsdekho.ga/image/FIFA_WORLD_CUP_2022.jpg" class="plyr">
-
-      <!-- Video Source  -->
-
-<source src="https://kwmedia.hibridcdn.net/kwmedia/kwtvsports_abr/kwmedia/kwtvsports_1080p/chunks.m3u8?p=53&s=1668866786&e=1668953186&cf=1668953186&h=0f8b48a96e3e77147a0122ab64e2e7f7" type="application/x-mpegURL"/>
-
-</video>
-
-                 
-
+<!-- Histats.com  END  -->
+</body>
 </html>
