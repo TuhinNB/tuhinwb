@@ -10,27 +10,37 @@
 
      <link rel="stylesheet" id="clappr-style-css" href="/soccer/plugins/embed-clappr/clappr.css?ver=1.7.7" type="text/css" media="">
      <script src="//cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
      <script src="//cdn.jsdelivr.net/npm/cdnbye@latest/dist/hlsjs-p2p-engine.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/cdnbye@latest/dist/clappr-plugin.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr-responsive-container-plugin@1.0.0/dist/clappr-responsive-container-plugin.min.js"></script>
     <script type="text/javascript"src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
 
-    <Title>JC 1</Title>
+    <Title>JC 1 </Title>
 
 
 </head>
 <body>
-
-
- <div id="player"></div>
-
- <script>var player = new Clappr.Player(
+  <div id="player"></div>
+  <script>
+   var player = new Clappr.Player(
     {
-        source: "https://tv.bdflix.xyz/FIFA/tracks-v1a1/mono.m3u8",
+        source: "http://ctgtv.online:8234/t_tv/tracks-v1a1/mono.m3u8?token=ZrXwqGqN8lN-l0",
         poster: 'https://raw.githubusercontent.com/TuhinNB/tuhinwb/master/image/FIFA.jpg',
         parentId: "#player",
         autoPlay: true,
         plugins: [CDNByeClapprPlugin, ResponsiveContainer, LevelSelector],
+        levelSelectorConfig: {
+            title: 'Quality',
+            labels: {
+                2: 'High', // 500kbps
+                1: 'Med', // 240kbps
+                0: 'Low', // 120kbps
+            },
+            labelCallback: function(playbackLevel, customLabel) {
+                return customLabel + playbackLevel.level.height+'p'; // High 720p
+            }
+        },
         playback: {
             hlsjsConfig: {
                 // Other hlsjsConfig options provided by hls.js
@@ -43,8 +53,7 @@
         }
     });
    
-</script>
 
-<!-- Histats.com  END  -->
+  </script>
 </body>
 </html>
