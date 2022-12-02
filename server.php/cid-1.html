@@ -1,65 +1,59 @@
-<!DOCTYPE HTML>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
- 
-  <link rel="stylesheet" id="clappr-style-css" href="/soccer/plugins/embed-clappr/clappr.css?ver=1.7.7" type="text/css" media="">
-     <script src="//cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
-     <script src="//cdn.jsdelivr.net/npm/cdnbye@latest/dist/hlsjs-p2p-engine.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/cdnbye@latest/dist/clappr-plugin.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr-responsive-container-plugin@1.0.0/dist/clappr-responsive-container-plugin.min.js"></script>
-    <script type="text/javascript"src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cdnbye@latest/dist/hlsjs-p2p-engine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cdnbye@latest/dist/clappr-plugin.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+</head><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-124289831-4"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);})();</script>
+<script data-cfasync="false" src="//achcdn.com/script/suv4.js" data-adel="lwsu" cdnd="achcdn.com" zid="5822930"></script>
 
-  <title>JC 1</title>
+<title>JC 1</title>
 
-
-  <script type="text/javascript" charset="utf-8">
-
-  window.onload = function() {
-  var player = new Clappr.Player({
-    source: 'https://tv.bdflix.xyz/FIFA/tracks-v1a1/mono.m3u8',
-    poster: 'https://raw.githubusercontent.com/TuhinNB/tuhinwb/master/image/FIFA.jpg',
-    parentId: '#player-wrapper',
-    autoPlay: true,
-    height: '100%',
-    width: '100%',
-    hideMediaControl: true,
-    plugins: [CDNByeClapprPlugin, ResponsiveContainer, LevelSelector],
-
-
-    
-    // levelSelectorConfig: {
-    //         title: 'Quality',
-    //         labels: {
-    //             2: 'High', // 500kbps
-    //             1: 'Med', // 240kbps
-    //             0: 'Low', // 120kbps
-    //         },
-    //         labelCallback: function(playbackLevel, customLabel) {
-    //             return customLabel + playbackLevel.level.height+'p'; // High 720p
-    //         }
-    //     },
-        playback: {
-            hlsjsConfig: {
-                // Other hlsjsConfig options provided by hls.js
-                p2pConfig: {
-                    logLevel: 'debug',
-                    live: true,        // set to true in live mode
-                    // Other p2pConfig options provided by CDNBye
+<div id="player"></div>
+<script>
+    var player = new Clappr.Player(
+        {
+            source: "https://tv.bdflix.xyz/FIFA/tracks-v1a1/mono.m3u8",
+            poster: 'https://raw.githubusercontent.com/TuhinNB/tuhinwb/master/image/FIFA.jpg',
+            parentId: "#player",
+            autoPlay: true,
+  		mute: true,
+		width: '100%',
+		height:'100%',
+            plugins: [LevelSelector],
+            levelSelectorConfig: {
+                title: 'Quality',
+                labels: {
+                  2: 'High', // 500kbps
+                  1: 'Med', // 240kbps
+                  0: 'Low', // 120kbps
                 }
-            }
-        }
+              },
+            playback: {
+                hlsjsConfig: {
+                    // Other hlsjsConfig options provided by hls.js
+                    p2pConfig: {
+                        logLevel: 'debug',
+                        live: true,        // set to true in live mode
+                        // Other p2pConfig options provided by CDNBye
+                    }
+                }
+            },
+            mediacontrol: {
+                        seekbar: '#add8e6',
+                        buttons: '#add8e6'
+                    },
+            mimeType: "application/x-mpegURL"
+        });
 
-  
-  });
-}
-
-  </script>
-</head>
-<body>
-  <div align="center">
-    <div id="player-wrapper">
-  </div>
-  </div>
-</body>
+</script>
+<style>
+         .media-control[data-media-control] .media-control-layer[data-controls] button.media-control-button[data-hd-indicator] {
+         display: block !important;
+         fill: rgb(173, 216, 230) !important;
+         }
+      </style>
 </html>
